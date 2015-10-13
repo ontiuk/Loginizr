@@ -13,7 +13,15 @@ Control the look & feel of your WordPress Login page.
 Description
 =============
 
-This plugin allows the user to completely customise the look and feel of the WordPress login page from the comfort of the WordPress admin customizer interface
+This plugin allows the user to completely customise the look and feel of the WordPress login page from the comfort of the WordPress admin customizer interface.
+
+Features
+===========
+
+- Dynamically creates a custom login css file to override default values
+- Fully integrated with WordPress Customiser
+- Intuitive interface with sections & settings
+- Filters to override defaults via your parent/child theme
 
 == Installation ==
 
