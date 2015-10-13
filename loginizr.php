@@ -159,9 +159,6 @@ class Loginizr {
 
     /**
      * Add the Loginizr sections to the Loginize panel
-     * - roles
-     * - background
-     * - logo
      *
      * @param   object  $wpc    WP_Customiser
      * @access  protected    
