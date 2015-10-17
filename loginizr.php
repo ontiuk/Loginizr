@@ -45,7 +45,7 @@ define( 'LOGINIZR_WP_VERSION', '4.0' );
  * @package WordPress
  * @author  OnTiUK
  */
-class Loginizr {
+final class Loginizr {
 
     /**
      * Loginizr panel name
@@ -53,7 +53,7 @@ class Loginizr {
      * @var     string
      * @access  private
      */
-    private $panel;
+    private $panel = 'loginizr_panel';
 
     /**
      * Default Loginizr panel priority
@@ -85,7 +85,7 @@ class Loginizr {
         }
 
         // Set login panel id
-        $this->panel = 'loginizr_panel';
+        $this->panel = apply_filters( 'loginizr_panel', __( $this->panel, $this->text ) );
 
         // Set up customizer menu
         add_action( 'customize_register', array( $this, 'register_menu' ) );
