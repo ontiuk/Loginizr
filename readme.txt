@@ -47,6 +47,12 @@ The default values displayed in the Admin UI customiser can be modified via a se
 
 Panel:
 
+loginizr_panel - Panel name, default: lognizr_panel
+add_filter ( 'loginizr_panel', set_loginizr_panel, 10, 1);
+function set_loginizr_panel ( $default ) {
+	return 'loginizr';
+}
+
 loginizr_priority - Panel priority, default: 30
 add_filter ( 'loginizr_priority', set_loginizr_priority, 10, 1);
 function set_loginizr_priority ( $default ) {
