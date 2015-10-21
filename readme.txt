@@ -1,43 +1,39 @@
-Loginizr
-=============
-
-Contributors: tifosi / ontiuk
+=== Loginizr ===
+Contributors: tifosi
+Donate link: tbc
 Tags: login, customizer
 Requires at least: 4.0
-Tested up to: 4.3
+Tested up to: 4.3.1
 Stable tag: 1.0.0
 License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Control the look & feel of your WordPress Login page.
+Control the look & feel of your WordPress login page through the WordPress Customizer.
 
-Description
-=============
-
+== Description ==
 This plugin allows the user to completely customise the look and feel of the WordPress login page from the comfort of the WordPress admin customizer interface.
-
-Support
-===========
-
-Support via github: https://github.com/ontiuk/Loginizr/
-
-Features
-===========
 
 - Dynamically creates a custom login css file to override default values
 - Fully integrated with WordPress Customiser
 - Intuitive interface with sections & settings
 - Filters to override defaults via your parent/child theme
 
-== Installation ==
+== Frequently Asked Questions ==
+Support via github: https://github.com/ontiuk/Loginizr/
 
+== Installation ==
 1a. Upload the plugin folder to the /wp-content/plugins/ directory. Activate the plugin through the 'Plugins' menu in WordPress OR/
 1.b. Upload the plugin zip file via the WordPress plugin interface, either by uploading the dowloaded zip file, or via installing directly from the WordPress repository.
 
 The Login Customizer panel will then be available via the Appearance > Customize option to all users with at least edit_theme_options permission.
 
-Usage
-=======
+== Upgrade Notice == 
+Download the update and follow the install instructions, overwriting the files. Future versions via WordPress admin UI.
 
+== Screenshots == 
+Coming soon.
+
+=== Usage ===
 1. Go to Appearance > Customise
 2. Select the Login Customiser Menu Panel
 3. Select from the available sections and change the settings as required. Once changed the save & publish button will be available. Select this to save changes. These will be available to the login screen when next logging in, or as below.
@@ -46,12 +42,10 @@ The plugin dynamically creates a new login css file for the login page only whic
 
 The login panel of course is only available to non logged-in users, so testing the changes can be done via logging out / in, or better via using a separate computer, or via testing with a different browser e.g. logged in via IE, not logged in on chrome.
 
-Filters
-=========
+== Filters ==
 The default values displayed in the Admin UI customiser can be modified via a selection of filters.
 
 Panel:
-
 loginizr_panel - Panel name, default: lognizr_panel
 add_filter ( 'loginizr_panel', set_loginizr_panel, 10, 1);
 function set_loginizr_panel ( $default ) {
@@ -76,8 +70,7 @@ function set_loginizr_title ( $desc ) {
 	return __( 'Customize your WordPress Login Page', 'wordpress' ); 
 }
 
-Section:
-Each section has a filter for priority & title
+Section: Each section has a filter for priority & title
 
 add_filter( 'loginizr_section_priority', 'set_loginizr_section_priority', 10, 2 );
 function set_loginizr_section_priority( $priority, $section = '' ) {
@@ -240,7 +233,7 @@ function set_loginizr_other_hover ( $default ) {
 	return '#fff'; //valid hex/rgb, default #2EA2CC
 }
 
-Changelog
-===========
+== Changelog ===
 
-1.0.0 Initial release
+= 1.0.0 =
+* Initial release
