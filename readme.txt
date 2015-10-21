@@ -15,6 +15,11 @@ Description
 
 This plugin allows the user to completely customise the look and feel of the WordPress login page from the comfort of the WordPress admin customizer interface.
 
+Support
+===========
+
+Support via github: https://github.com/ontiuk/Loginizr/
+
 Features
 ===========
 
